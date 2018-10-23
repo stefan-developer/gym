@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--Insert css file-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Gym website</title>
+  </head>
+
+  <body>
+    <!--Header-->
+    <header id="header">
+      
+      <div id="my-sidebar-button" onclick="openSidebar()">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
+
+      <!--Header top (white)-->
+      <div class="header-top">
+        <div class="container">
+          <div class="row" id="aligning-head">
+            <div class="col-4 aligning-head-col" id="aligning-wrap-1">
+              <a href="#"><span class="fa fa-location-arrow"></span></a>
+              <a href="#" class="link1">SUPPORT@COLORLIB.COM</a>
+            </div>
+
+            <div class="col-4">
+              <a class="navbar-brand" href="#"><img src="https://colorlib.com/preview/theme/fitness/img/logo.png" class="img-fluid"></a>
+            </div>
+
+            <div class="col-4 aligning-head-col" id="aligning-wrap-2">
+              <a href="#" class="link2">+3819874568</a>  
+              <a href="#"><span class="fa fa-phone"></span></a>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <!--Navbar (pink)-->
+      <div class="container main-menu">
+        <div class="row align-nav-top">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-md" id="my-navbar">  
+              <ul class="navbar-nav" id="main-navigation">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about_page.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./services_page.html">SERVICES</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="./trainers_page.html">TRAINERS</a>
+                </li> 
+
+                <li class="nav-item dropdown main-drop">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    BLOG
+                  </a>
+                  <ul class="dropdown-menu main-drop-menu">
+                    <li><a class="dropdown-item" href="./blog_home_page.html">Blog Home</a></li>
+                    <li><a class="dropdown-item" href="./blog_single_page.html">Blog single</a></li>
+                    <li class="dropdown sub-dropdown main-sub-drop dropleft">
+                      <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Level 2</a>
+                      <ul class="dropdown-menu dropdown-menu-left sub-dropdown-menu main-sub-drop-menu">
+                        <li><a class="dropdown-item" href="#">Item One</a></li>
+                        <li><a class="dropdown-item" href="#">Item Two</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown main-drop">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                   PAGES
+                  </a>
+                  <ul class="dropdown-menu main-drop-menu">
+                    <li><a class="dropdown-item" href="./schedule_page.html">Schedule</a></li>
+                    <li><a class="dropdown-item" href="./packages_page.html">Packages</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./elements_page.html">ELEMENTS</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact_page.html">CONTACT</a>
+                </li> 
+              </ul>
+            </nav>  
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <!--Sidebar-->
+    <div id="wrapper-sidebar">
+      <!-- Navbar links -->
+      <div class="my-sidebar" id="my-sidebar-menu">
+        <a href="#" onclick="closeSidebar()" id="close-button">X</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about_page.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./services_page.html">SERVICES</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="./trainers_page.html">TRAINERS</a>
+          </li> 
+
+          <li class="nav-item dropdown dropright">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              BLOG
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./blog_home_page.html">Blog Home</a></li>
+              <li><a class="dropdown-item" href="./blog_single_page.html">Blog single</a></li>
+              <li class="dropdown sub-dropdown dropright">
+                <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Level 2</a>
+                <ul class="dropdown-menu dropdown-menu-left sub-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Item One</a></li>
+                  <li><a class="dropdown-item" href="#">Item Two</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown dropright">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" >
+             PAGES
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item" href="./schedule_page.html">Schedule</a></li>
+              <li><a class="dropdown-item" href="./packages_page.html">Packages</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+              <a class="nav-link" href="./elements_page.html">ELEMENTS</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="./contact_page.html">CONTACT</a>
+          </li> 
+        </ul>
+      </div>
+    </div>
+
+    <!--Overlay-->
+    <div id="sidebar-overlay" onclick="closeSidebar()">
+      
+    </div>
+
+    <!--Cover photo--> 
+    <section id="banner-section" class="another-banner-photo">
+      <div class="container text-center">
+        <div class="row banner-content">
+          <div class="col-12 banner-content-mar">
+            <h1>Contact Us</h1>
+            <p>Home <span class="fa fa-arrow-right"></span> Contact Us</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Second section-->
+    <section id="contact-section">
+      <div class="container">
+        <div class="row" id="map">
+          <div class="col-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11608.264957312493!2d21.91221701977539!3d43.33380295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1535708638003" class="img-fluid" allowfullscreen></iframe>
+            <!-- max-width="600" height="450" frameborder="0" -->
+          </div>
+        </div>
+
+        <div class="row" id="contact-section-form">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="row">
+              <div class="col-3 icon-wrap">
+                <span class="fa fa-home"></span>
+              </div>
+
+              <div class="col-9 text-wrap">
+                <h6>City: Nis, Country: Serbia</h6>
+                <p>3535 Hipodrom Road</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-3 icon-wrap">
+                <span class="fa fa-phone"></span>
+              </div>
+
+              <div class="col-9 text-wrap">
+                <h6>00 (061) 3878 967</h6>
+                <p>Mon to Fri 9am to 6 pm</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-3 icon-wrap">
+                <span class="fa fa-envelope"></span>
+              </div>
+
+              <div class="col-9 text-wrap">
+                <h6>support@develop.com</h6>
+                <p>Send us your query!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="row input-margin-none">
+              <input type="text" class="form-control" name="text" placeholder="Enter your name">
+            </div>
+
+            <div class="row input-margin-none">
+              <input type="text" class="form-control" name="text" placeholder="Enter email address">
+            </div>
+
+            <div class="row input-margin-none">
+              <input type="text" class="form-control" name="text" placeholder="Enter subject">
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <textarea class="form-control" rows="7">Enter Messege</textarea>
+          </div>
+        </div>
+
+        <div class="row buton-margin">
+          <div class="col">
+            <button type="submit" class="btn pull-right">SEND MESSAGE</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer container" id="last-section">
+      <div class="container">
+        <div class="row lst">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h5>About Us</h5>
+            <p>The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park ranks as three of the magnificent & awe inspiring.</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h5>Contact Us</h5>
+            <p>56/8, rockybeach road, santa monica, Los angeles, California - 59620.</p>
+            <p class="footer-numbers">***6532-568-9746</p>
+            <p class="footer-numbers lst-mar-bot">***6532-569-9748</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h5>Newsletter</h5>
+            <p>You can trust us. we only send offers, not a single spam.</p>
+            <div class="input-group">
+              <input type="email" class="form-control" name="email" placeholder="Your Email address">
+              <div class="input-group-append">
+                <button class="btn" type="submit"><span class="fa fa-arrow-right"></span></button>  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="copyright-footer-text">
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <p>Copyright ©2018 All rights reserved | This template is made with  by <a href="#">Colorlib</a></p>
+          </div>
+          
+          <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-5 col-lg-offset-3 col-lg-4 last-section-icons">
+              <i class="fa fa-facebook-official"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-snapchat"></i>
+              <i class="fa fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--Include Main js file-->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>

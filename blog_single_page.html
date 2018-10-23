@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!--Insert css file-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Gym website</title>
+  </head>
+
+  <body>
+    <!--Header-->
+    <header id="header">
+
+      <div id="my-sidebar-button" onclick="openSidebar()">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </div>
+
+      <!--Header top (white)-->
+      <div class="header-top">
+        <div class="container">
+          <div class="row" id="aligning-head">
+            <div class="col-4 aligning-head-col" id="aligning-wrap-1">
+              <a href="#"><span class="fa fa-location-arrow"></span></a>
+              <a href="#" class="link1">SUPPORT@COLORLIB.COM</a>
+            </div>
+
+            <div class="col-4">
+              <a class="navbar-brand" href="#"><img src="https://colorlib.com/preview/theme/fitness/img/logo.png" class="img-fluid"></a>
+            </div>
+
+            <div class="col-4 aligning-head-col" id="aligning-wrap-2">
+              <a href="#" class="link2">+3819874568</a>  
+              <a href="#"><span class="fa fa-phone"></span></a>
+            </div>
+          </div> 
+        </div>
+      </div>
+
+      <!--Navbar (pink)-->
+      <div class="container main-menu">
+        <div class="row align-nav-top">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-md" id="my-navbar">  
+              <ul class="navbar-nav" id="main-navigation">
+                <li class="nav-item">
+                  <a class="nav-link" href="./index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about_page.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./services_page.html">SERVICES</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="./trainers_page.html">TRAINERS</a>
+                </li> 
+
+                <li class="nav-item dropdown main-drop">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    BLOG
+                  </a>
+                  <ul class="dropdown-menu main-drop-menu">
+                    <li><a class="dropdown-item" href="./blog_home_page.html">Blog Home</a></li>
+                    <li><a class="dropdown-item" href="./blog_single_page.html">Blog single</a></li>
+                    <li class="dropdown sub-dropdown main-sub-drop dropleft">
+                      <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Level 2</a>
+                      <ul class="dropdown-menu dropdown-menu-left sub-dropdown-menu main-sub-drop-menu">
+                        <li><a class="dropdown-item" href="#">Item One</a></li>
+                        <li><a class="dropdown-item" href="#">Item Two</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown main-drop">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                   PAGES
+                  </a>
+                  <ul class="dropdown-menu main-drop-menu">
+                    <li><a class="dropdown-item" href="./schedule_page.html">Schedule</a></li>
+                    <li><a class="dropdown-item" href="./packages_page.html">Packages</a></li>
+                  </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="./elements_page.html">ELEMENTS</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact_page.html">CONTACT</a>
+                </li> 
+              </ul>
+            </nav>  
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <!--Sidebar-->
+    <div id="wrapper-sidebar">
+      <!-- Navbar links -->
+      <div class="my-sidebar" id="my-sidebar-menu">
+        <a href="#" onclick="closeSidebar()" id="close-button">X</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about_page.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./services_page.html">SERVICES</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="./trainers_page.html">TRAINERS</a>
+          </li> 
+
+          <li class="nav-item dropdown dropright">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              BLOG
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./blog_home_page.html">Blog Home</a></li>
+              <li><a class="dropdown-item" href="./blog_single_page.html">Blog single</a></li>
+              <li class="dropdown sub-dropdown dropright">
+                <a class="dropdown-item dropdown-toggle" data-toggle="dropdown" href="#">Level 2</a>
+                <ul class="dropdown-menu dropdown-menu-left sub-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Item One</a></li>
+                  <li><a class="dropdown-item" href="#">Item Two</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown dropright">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" >
+             PAGES
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item" href="./schedule_page.html">Schedule</a></li>
+              <li><a class="dropdown-item" href="./packages_page.html">Packages</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="./elements_page.html">ELEMENTS</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="./contact_page.html">CONTACT</a>
+          </li> 
+        </ul>
+      </div>
+    </div>
+
+    <!--Overlay-->
+    <div id="sidebar-overlay" onclick="closeSidebar()">
+      
+    </div>
+
+    <!--Cover photo-->
+    <section id="banner-section" class="another-banner-photo">
+      <div class="container text-center">
+        <div class="row banner-content">
+          <div class="col-12 banner-content-mar">
+            <h1>Blog Details Page</h1>
+            <p>Home <span class="fa fa-arrow-right"></span> Blog <span class="fa fa-arrow-right"></span> Blog Details Page</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Second-section-->
+    <section id="section-blog-single">
+      <div class="container">
+        <div class="row main-content">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
+
+            <!--First-row-image-->
+            <div class="row">
+              <div class="col-12">
+                <img src="https://colorlib.com/preview/theme/fitness/img/blog/feature-img1.jpg" class="img-fluid main-content-images">
+              </div>
+            </div>
+
+            <!--Second-row-->
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3" id="left-content">
+                <p><a href="#">Food</a>,<a href="#">Technology</a>, <a href="#">Politics</a>, <a href="#">Lifestyle</a></p>
+                <p><a href="#">Mark wiens <span class="glyphicon glyphicon-user"></span></a></p>
+                <p><a href="#">12 Dec, 2017 <span class="glyphicon glyphicon-date"></span></a></p>
+                <p><a href="#">1.2M Views <span class="glyphicon glyphicon-views"></span></a></p>
+                <p><a href="#">06 Comments <span class="glyphicon glyphicon-comments"></span></a></p>
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                <h3>Astronomy Binoculars A Great Alternative</h3>
+                <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction.</p>
+                <p>Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed</p>
+                <p>Boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training. who has the willpower to actually sit through a self-imposed</p>
+              </div>
+            </div>
+
+            <!--Third-row-->
+            <div class="row blog-single-row-margin-top">
+              <div class="col-12">
+                <p class="white-background">MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower to actually sit through a self-imposed MCSE training.</p>
+              </div>
+            </div>
+
+            <!--Fourth-row-->
+            <div class="row blog-single-row-margin-top">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img src="https://colorlib.com/preview/theme/fitness/img/blog/post-img1.jpg" class="img-fluid main-content-images">
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <img src="https://colorlib.com/preview/theme/fitness/img/blog/post-img2.jpg" class="img-fluid main-content-images">
+              </div>
+            </div>
+
+            <!--Fifth-row-->
+            <div class="row blog-single-row-margin-top">
+              <div class="col-12">
+                <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.</p>
+                <p>MCSE boot camps have its supporters and its detractors. Some people do not understand why you should have to spend money on boot camp when you can get the MCSE study materials yourself at a fraction of the camp price. However, who has the willpower.</p>
+              </div>
+            </div>
+
+            <!--Sixth-row-->
+            <div class="row sixth-row-blog-single">
+              <div class="col-xs-12 col-sm-12 col-md-6 media first-media-column">
+                <img src="https://colorlib.com/preview/theme/fitness/img/blog/prev.jpg" class="img-fluid">
+                <div class="media-body">
+                  <p>Prev Post</p>
+                  <h5>Space The Final Frontier</h5>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-6 media second-media-column">
+                <div class="media-body">
+                  <p>Next Post</p>
+                  <h5>Telescope 101</h5>
+                </div>
+                <img src="https://colorlib.com/preview/theme/fitness/img/blog/next.jpg" class="img-fluid">
+              </div>
+            </div>
+
+            <!--Seventh-row-->
+            <div class="row seventh-row-blog-single">
+              <div class="col-12">
+                <h4>05 Comments</h4>
+                <div class="row">
+                  <div class="col-12 media">
+                    <img src="https://colorlib.com/preview/theme/fitness/img/blog/c1.jpg" class="img-fluid">
+                    <div class="media-body">
+                      <button type="button" class="btn pull-right">REPLY</button>
+                      <h6>Emilly Blunt</h6>
+                      <p>December 4, 2017 at 3:12 pm</p>
+                      <p class="never-say">Never say goodbye till the end comes!</p>
+                      <div class="media">
+                        <img src="https://colorlib.com/preview/theme/fitness/img/blog/c2.jpg" class="img-fluid">
+                        <div class="media-body">
+                          <button type="button" class="btn pull-right">REPLY</button>
+                          <h6>Elsie Cunningham</h6>
+                          <p>December 4, 2017 at 3:12 pm</p>
+                          <p class="never-say">Never say goodbye till the end comes!</p>
+                        </div>
+                      </div>
+
+                      <div class="media">
+                        <img src="https://colorlib.com/preview/theme/fitness/img/blog/c3.jpg" class="img-fluid">
+                        <div class="media-body">
+                          <button type="button" class="btn pull-right">REPLY</button>
+                          <h6>Annie Stephens</h6>
+                          <p>December 4, 2017 at 3:12 pm</p>
+                          <p class="never-say">Never say goodbye till the end comes!</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 media">
+                    <img src="https://colorlib.com/preview/theme/fitness/img/blog/c4.jpg" class="img-fluid">
+                    <div class="media-body">
+                      <button type="button" class="btn pull-right">REPLY</button>
+                      <h6>Maria Luna</h6>
+                      <p>December 4, 2017 at 3:12 pm</p>
+                      <p class="never-say">Never say goodbye till the end comes!</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 media">
+                    <img src="https://colorlib.com/preview/theme/fitness/img/blog/c5.jpg" class="img-fluid">
+                    <div class="media-body">
+                      <button type="button" class="btn pull-right">REPLY</button>
+                      <h6>Ina Hayes</h6>
+                      <p>December 4, 2017 at 3:12 pm</p>
+                      <p class="never-say">Never say goodbye till the end comes!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Eight row-->
+            <!--Form-->
+            <div class="row eight-row-blog-single">
+              <div class="col-12 text-center">
+                <h4>Leave a Comment</h4>
+                <form>
+                  <div class="row eight-row-blog-single-part">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 margin-botom-input">
+                      <input type="name" name="name" class="form-control" placeholder="Enter name">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                      <input type="email" name="email" class="form-control" placeholder="Enter email address">
+                    </div>
+                  </div>
+
+                  <div class="row eight-row-blog-single-part">
+                    <div class="col-12">
+                      <input type="Subject" name="subject" class="form-control" placeholder="Subject">
+                    </div>
+                  </div>
+
+                  <div class="row eight-row-blog-single-part">
+                    <div class="col">
+                      <textarea class="form-control" rows="5">Messege</textarea>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <button type="submit" class="btn">POST COMMENT</button>
+                    </div>
+                  </div>
+                </form>
+                
+              </div>
+            
+            </div>
+          </div>
+
+          <!--Right widget-->
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div id="right-widget">
+              <!--Form-->
+              <form>
+                <div class="input-group first-input-group">
+                  <input type="text" class="form-control first-input" value="Search Posts">
+                  <div class="input-group-append">
+                    <button type="submit" class="btn first-button"><span class="fa fa-search"></span></button>
+                  </div>
+                </div>
+              </form>
+
+              <!--Senior bloger-->
+              <div id="widget-senior-bloger">
+                <div class="text-center">
+                  <img src="https://colorlib.com/preview/theme/fitness/img/blog/user-info.png" class="img-fluid">
+                  <h5>Charlie Barber</h5>
+                  <p>Senior blog writer</p>
+                </div>
+
+                <div class="text-center">
+                  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                  <i class="fa fa-instagram w3-hover-opacity"></i>
+                  <i class="fa fa-snapchat w3-hover-opacity"></i>
+                  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                </div>
+
+                <div class="text-center">
+                  <p>Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.</p>
+                </div>
+              </div>
+
+              <!--Widget card-->
+              <div id="widget-popular-post">
+                <div class="card text-center">
+                  Popular Posts
+                </div>
+
+                <div class="media moving-popular-post-part">
+                  <img src="https://colorlib.com/preview/theme/fitness/img/blog/pp1.jpg" class="img-fluid">
+                  <div class="media-body">
+                    <h6>Space The Final Frontier</h6>
+                    <p>02 Hours ago</p>
+                  </div>
+                </div>
+
+                <div class="media moving-popular-post-part">
+                  <img src="https://colorlib.com/preview/theme/fitness/img/blog/pp2.jpg" class="img-fluid">
+                  <div class="media-body">
+                    <h6>The Amazing Hubble</h6>
+                    <p>02 Hours ago</p>
+                  </div>
+                </div>
+
+                <div class="media moving-popular-post-part">
+                  <img src="https://colorlib.com/preview/theme/fitness/img/blog/pp3.jpg" class="img-fluid">
+                  <div class="media-body">
+                    <h6>Astronomy Or Astrology</h6>
+                    <p>02 Hours ago</p>
+                  </div>
+                </div>
+
+                <div class="media moving-popular-post-part">
+                  <img src="https://colorlib.com/preview/theme/fitness/img/blog/pp4.jpg" class="img-fluid">
+                  <div class="media-body">
+                    <h6>Asteroids telescope</h6>
+                    <p>02 Hours ago</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Widget image -->
+              <div id="widget-image">
+                <img src="https://colorlib.com/preview/theme/fitness/img/blog/ads-banner.jpg" class="img-fluid">
+              </div>
+              
+              <!--Widget post categories -->
+              <div id="widget-post-categories">
+                <div class="card text-center">
+                  Post Categories
+                </div>
+
+                <ul class="widget-post-categories-technology-list">
+                  <li>Technology <span class="pull-right">37</span></li>
+                  <li>Lifestyle <span class="pull-right">24</span></li>
+                  <li>Fashion <span class="pull-right">59</span></li>
+                  <li>Art <span class="pull-right">29</span></li>
+                  <li>Food <span class="pull-right">15</span></li>
+                  <li>Arhitecture <span class="pull-right">09</span></li>
+                  <li>Adventure <span class="pull-right">44</span></li>
+                </ul>
+              </div>
+
+              <!--Another widget card-->
+              <div id="widget-newsletter-card" class="text-center">
+                <div class="card">
+                  Newsletter
+                </div>
+
+                <div>
+                  <p>Here, I focus on a range of items and features that we use in life without giving them a second thought.</p>
+                </div>
+
+                <form>
+                  <div class="input-group second-input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <span class="fa fa-envelope"></span>
+                      </div>
+                    </div>
+
+                    <input type="text" class="form-control second-input" placeholder="Enter email">
+
+                    <div class="input-group-append">
+                      <button type="button" class="btn second-button">Subcribe</button>
+                    </div>
+                  </div>
+                </form>
+
+                <div>
+                  <p class="move-parag">You can unsubscribe at any time</p>
+                </div>
+              </div>
+
+              <!--Widget card tag-clouds -->
+              <div id="widgget-card-tagclouds">
+                <div class="card text-center">
+                  Tag Clouds
+                </div>
+
+                <div>
+                  <span class="badge badge-danger">Technology</span>
+                  <span class="badge badge-danger">Fashion</span>
+                  <span class="badge badge-danger">Arhitecture</span>
+                  <span class="badge badge-danger">Fashion</span>
+                  <span class="badge badge-danger">Food</span>
+                  <span class="badge badge-danger">Technology</span>
+                  <span class="badge badge-danger">Lifestyle</span>
+                  <span class="badge badge-danger">Art</span>
+                  <span class="badge badge-danger">Adventure</span>
+                  <span class="badge badge-danger">Food</span>
+                  <span class="badge badge-danger">Lifestyle</span>
+                  <span class="badge badge-danger">Adventure</span>
+                </div>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer container" id="last-section">
+      <div class="container">
+        <div class="row lst">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h5>About Us</h5>
+            <p>The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park ranks as three of the magnificent & awe inspiring.</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h5>Contact Us</h5>
+            <p>56/8, rockybeach road, santa monica, Los angeles, California - 59620.</p>
+            <p class="footer-numbers">***6532-568-9746</p>
+            <p class="footer-numbers lst-mar-bot">***6532-569-9748</p>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <h5>Newsletter</h5>
+            <p>You can trust us. we only send offers, not a single spam.</p>
+            <div class="input-group">
+              <input type="email" class="form-control" name="email" placeholder="Your Email address">
+              <div class="input-group-append">
+                <button class="btn" type="submit"><span class="fa fa-arrow-right"></span></button>  
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="copyright-footer-text">
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <p>Copyright ©2018 All rights reserved | This template is made with  by <a href="#">Colorlib</a></p>
+          </div>
+          
+          <div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-5 col-lg-offset-3 col-lg-4 last-section-icons">
+              <i class="fa fa-facebook-official"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-snapchat"></i>
+              <i class="fa fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--Include Main js file-->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
